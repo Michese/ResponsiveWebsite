@@ -1,3 +1,77 @@
 *
   margin: 0
   padding: 0
+
+body
+  background-color: #ffffff
+
+.center
+  padding: 0 calc(50% - 140px)
+
+.header
+  display: flex
+  justify-content: space-between
+  min-height: 288px
+  padding-top: 30px
+  max-width: 100vw
+  background: url('img/promo_m320.jpg') center no-repeat
+  background-size: cover
+  align-items: flex-start
+
+
+.menu__open
+  color: #ffffff
+
+.menu__close
+  color: #000000
+
+.menu__open, .menu__close
+  font-size: 40px
+
+.header__checkbox
+  display: none
+  &:checked ~.navigation
+    top: 0
+
+.navigation
+  position: absolute
+  display: flex
+  flex-direction: column
+  z-index: 1
+  background-color: #ffffff
+  top: -100%
+  min-height: 100vh
+  width: 100vw
+
+.header__navigation
+  display: flex
+  justify-content: space-between
+
+.menu
+  list-style-type: none
+  flex-grow: 1
+  flex-direction: column
+  display: flex
+  align-items: center
+  justify-content: center
+  align-content: center
+
+.menu__link
+  text-decoration: none
+
+@media (min-width: 576px)
+  .center
+    padding: 0 calc(50% - 270px)
+  .menu__open, .menu__close
+    display: none
+@media (min-width: 768px)
+  .center
+    padding: 0 calc(50% - 360px)
+
+@media (min-width: 992px)
+  .center
+    padding: 0 calc(50% - 480px)
+
+@media (min-width: 1200px)
+  .center
+    padding: 0 calc(50% - 590px)
