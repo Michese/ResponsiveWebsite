@@ -4,32 +4,311 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MyriadPro/stylesheet.css">
     <script src="https://kit.fontawesome.com/9147614acd.js" crossorigin="anonymous"></script>
     <title>adaptive landing page</title>
 </head>
 <body>
 <header class="header center">
-    <a href="#" class="logo"><img src="img/logo.png" alt="logo image"></a>
-    <label for="menu__switch" class="menu__open">
-        <i class="fas fa-bars"></i>
-    </label>
-    <input type="checkbox" id="menu__switch" class="header__checkbox">
-    <nav class="navigation">
-        <header class="header__navigation">
-            <img src="img/logo_checked.png" alt="logo image">
-            <label for="menu__switch" class="menu__close">
-                <i class="fas fa-times"></i>
+    <div class="header__top">
+        <div class="header-logo">
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo image"></a>
+            <label for="menu__switch" class="menu__open">
+                <i class="fas fa-bars"></i>
             </label>
-        </header>
-        <ul class="menu">
-            <li class="menu__list"><a href="#" class="menu__link">list-1</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">list-2</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">list-3</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">list-4</a></li>
-        </ul>
-    </nav>
+        </div>
+        <input type="checkbox" id="menu__switch" class="header__checkbox">
+        <nav class="navigation">
+            <header class="header__navigation">
+
+                <img src="img/logo_checked.png" alt="logo image" class="logo__checked">
+                <label for="menu__switch" class="menu__close">
+                    <i class="fas fa-times"></i>
+                </label>
+            </header>
+            <ul class="menu">
+                <li class="menu__list"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">Описание</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">Преимущества</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">Партнёры</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">Гарантии</a></li>
+                <li class="menu__list"><a href="#" class="menu__link">FAQ</a></li>
+            </ul>
+            <h5 class="menu__checked_h5">ОСТАЛИСЬ ВОПРОСЫ?</h5>
+            <input type="tel" name="menuCheckedTel" id="menuCheckedTel" class="menu__checked_textBox"
+                   placeholder="Ваш телефон">
+            <a href="#" class="button menu__checked_button">заказать звонок</a>
+            <label for="MenuCheckedCheckbox" class="menu__checked_label"><input type="checkbox"
+                                                                                name="MenuCheckedCheckbox"
+                                                                                id="MenuCheckedCheckbox"
+                                                                                class="menu__checked_checkbox">
+                <p class="menu__checked_checkbox_content">Я согласен на обработку персональных данных</p>
+            </label>
+            <div class="menu__checked_networks">
+                <i class="fab fa-vk menu__checked_network"></i>
+                <i class="fab fa-instagram menu__checked_network"></i>
+                <i class="fab fa-facebook-f menu__checked_network"></i>
+            </div>
+        </nav>
+    </div>
+    <section class="thinkof">
+        <h1 class="thinkof_h1">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h1>
+        <h4 class="thinkof_h4">А посылка доедет сама</h4>
+        <a href="#" class="button">отправить посылку</a>
+    </section>
 </header>
-
-
+<section class="aggregator">
+    <img src="img/sprite.png" alt="cardboard man" class="aggregator__image">
+    <div class="aggregator__content">
+        <h5 class="aggregator_h5">Мы – агрегатор служб доставки</h5>
+        <p class="aggregator_p">С нами удобно вам, вашим клиентам и курьерским службам.
+            Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем
+            заказов, а вы получаете надежный сервис в подарок!
+        </p>
+        <a href="#" class="button">отправить посылку</a>
+    </div>
+</section>
+<div class="step">
+    <article class="step__block">
+        <img src="img/step1.png" alt="step1" class="step__image">
+        <h3 class="step__number">Шаг 1</h3>
+        <p class="step_p">
+            Придумайте что и кому отправить
+        </p>
+    </article>
+    <article class="step__block">
+        <img src="img/step2.png" alt="step2" class="step__image">
+        <h3 class="step__number">Шаг 2</h3>
+        <p class="step_p">
+            Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все
+            необходимые данные
+        </p>
+    </article>
+    <article class="step__block">
+        <img src="img/step3.png" alt="step3" class="step__image">
+        <h3 class="step__number">Шаг 3</h3>
+        <p class="step_p">
+            К Вам приезжает курьер, забирает посылку, Вы подписываете один документ
+        </p>
+    </article>
+    <article class="step__block">
+        <img src="img/step4.png" alt="step4" class="step__image">
+        <h3 class="step__number">Шаг 4</h3>
+        <p class="step_p">
+            Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)
+        </p>
+    </article>
+</div>
+<section class="care">
+    <h4 class="care_h4">Мы берём все заботы по доставке на себя!</h4>
+    <a href="#" class="button">отправить посылку</a>
+</section>
+<section class="callBack">
+    <div class="callBack__block">
+        <h2 class="callBack_h2">хотите мы вам перезвоним?</h2>
+        <p class="callBack_p">Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+    </div>
+    <div class="callBack__block">
+        <input type="tel" name="menuCheckedTel" id="callBack__telephone"
+               class="menu__checked_textBox callBack__telephone"
+               placeholder="Ваш телефон">
+        <a href="#" class="button callBack__button">заказать звонок</a>
+        <label for="callBack__checkbox" class="menu__checked_label">
+            <input type="checkbox" name="MenuCheckedCheckbox" id="callBack__checkbox"
+                   class="menu__checked_checkbox callBack__checkbox">
+            <div class="callBack__checkbox_div">
+                <a href="#" class="checkbox__close"><i class="fas fa-times"></i></a>
+            </div>
+            <p class="menu__checked_checkbox_content checkbox_p">Я согласен на обработку персональных данных</p>
+        </label>
+    </div>
+</section>
+<section class="review">
+    <h2 class="review_h2">Отзывы</h2>
+    <div class="review__content">
+        <span class="pagination"><i class="fas fa-chevron-left"></i></span>
+        <article class="review__block">
+            <figure class="review_figure">
+                <img src="img/woman1.jpg" alt="woman" class="review__image">
+                <div class="review_figure_content">
+                    <h3 class="review_figure_h3">Дарья</h3>
+                    <h5 class="review_figure_h5">La Intuicion</h5>
+                    <ul class="review__package_ul">
+                        <li class="review__package_list">Посылка: товары</li>
+                        <li class="review__package_list">Откуда: Москва</li>
+                        <li class="review__package_list">Куда: Нижневартовск</li>
+                    </ul>
+                </div>
+            </figure>
+            <p class="review__p">
+                Отличный и качественный сервис.
+                Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены,
+                что
+                помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши
+                потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).
+            </p>
+        </article>
+        <span class="pagination"><i class="fas fa-chevron-right"></i></span>
+    </div>
+</section>
+<section class="advantage">
+    <h2 class="advantage_h2">НАШИ ПРЕИМУЩЕСТВА</h2>
+    <div class="advantage__content">
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer1.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">Бесплатный сервис</p>
+        </article>
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer2.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">Огромный выбор вариантов доставки</p>
+        </article>
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer3.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">4 параметра лучшего предложения</p>
+        </article>
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer4.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">Удобство заказа</p>
+        </article>
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer5.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">Online-поддержка</p>
+        </article>
+        <article class="advantage__block">
+            <div class="advantage__image_div">
+                <img src="img/layer6.png" alt="layer" class="advantage__image">
+            </div>
+            <p class="advantage_p">Единый номер отслеживания</p>
+        </article>
+    </div>
+</section>
+<section class="warranty">
+    <h2 class="warranty_h2">НАШИ ГАРАНТИИ</h2>
+    <div class="warranty__block">
+        <span class="pagination"><i class="fas fa-chevron-left"></i></span>
+        <article class="warranty_article">
+            <div class="warranty__image_div">
+                <img src="img/warranty1.png" alt="#" class="warranty__image">
+            </div>
+            <h6 class="warranty_h6">Страховка отправлений</h6>
+        </article>
+        <span class="pagination"><i class="fas fa-chevron-right"></i></span>
+    </div>
+    <div class="warranty__content">
+        <p class="warranty__content_p">
+            Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под
+            пристальным
+            вниманием менеджеров SendIt
+        </p>
+        <a href="#" class="button">подробнее</a>
+    </div>
+</section>
+<section class="doubt">
+    <h2 class="doubt_h2">ОСТАЛИСЬ СОМНЕНИЯ?</h2>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                Вы не сможете доставить посылку за границу
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                Вы не занимаетесь такими простыми грузами, как мебель
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                Я отправляю вместе с коллегами, мы можем легко запутаться где чьё
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+    <details class="doubt__details">
+        <summary class="doubt__summary">
+            <p>
+                Нужно заполнять кучу документов
+            </p>
+            <i class="fas fa-chevron-down doubt__summary_down"></i>
+            <i class="fas fa-chevron-up doubt__summary_up"></i>
+        </summary>
+        <p class="doubt__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis eius facere in laborum omnis, tempora
+            tempore vel veritatis voluptates.
+        </p>
+    </details>
+</section>
+<div class="brands">
+    <span class="pagination"><i class="fas fa-chevron-left"></i></span>
+    <div class="brands__block">
+        <img src="img/brand1.png" alt="brand" class="brand__image">
+        <img src="img/brand2.png" alt="brand" class="brand__image">
+        <img src="img/brand3.png" alt="brand" class="brand__image">
+        <img src="img/brand4.png" alt="brand" class="brand__image">
+        <img src="img/brand5.png" alt="brand" class="brand__image">
+        <img src="img/brand6.png" alt="brand" class="brand__image">
+    </div>
+    <span class="pagination"><i class="fas fa-chevron-right"></i></span>
+</div>
+<section class="question">
+    
+</section>
 </body>
 </html>
